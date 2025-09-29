@@ -13,7 +13,7 @@ export default function DetailView(){
   const [data, setData] = useState<PokemonDetail | null>(null);
   const [error, setError] = useState<string|null>(null);
   const navigate = useNavigate();
-  const { getPrevNext, ids } = useSelection();
+  const { getPrevNext } = useSelection();
 
   useEffect(()=>{
     setData(null); setError(null);
