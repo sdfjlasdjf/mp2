@@ -1,0 +1,33 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(9, 14, 35, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .75rem 0;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: var(--brand);
+}
+.links {
+  display: flex;
+  gap: .5rem;
+}
+.links a {
+  padding: .5rem .75rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.active {
+  border-color: var(--border);
+  background: #0f1530;
+}

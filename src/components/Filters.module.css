@@ -1,0 +1,5 @@
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: .75rem; }
+.head { display:flex; align-items:center; justify-content: space-between; margin-bottom:.5rem; }
+.options { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip { display:flex; align-items:center; gap:.35rem; border:1px solid var(--border); padding:.35rem .55rem; border-radius:999px; background:#0f1530; }
+.chip input { accent-color: var(--brand); }

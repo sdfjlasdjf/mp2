@@ -1,0 +1,24 @@
+.card {
+  width: 100%;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  padding: .5rem;
+  display: grid;
+  gap: .5rem;
+  transition: transform .06s ease;
+}
+.card:hover { transform: translateY(-2px); border-color: var(--ring); box-shadow: 0 0 0 3px rgba(138,180,255,.15); }
+.media {
+  aspect-ratio: 1/1;
+  background: #0a0f26;
+  border-radius: 12px;
+  display:flex; align-items:center; justify-content:center;
+}
+.media img { width: 90%; image-rendering: -webkit-optimize-contrast; }
+.body { padding: .25rem .5rem .5rem; }
+.title { font-weight: 700; }
+.subtitle { font-size: .85rem; color: var(--muted); }
