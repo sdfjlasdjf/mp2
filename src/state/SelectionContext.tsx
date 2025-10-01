@@ -12,11 +12,10 @@ const SelectionCtx = createContext<Ctx | null>(null);
 export function SelectionProvider({ children }: { children: React.ReactNode }) {
   const [ids, setIds] = useState<number[]>([]);
 
-  // 保持函数引用稳定，并避免无意义的 state 更新
   const setCollection = useCallback((arr: number[]) => {
     setIds(prev => {
       if (prev.length === arr.length && prev.every((v, i) => v === arr[i])) {
-        return prev; // 相同则不更新，避免额外重渲染
+        return prev; 
       }
       return arr;
     });
